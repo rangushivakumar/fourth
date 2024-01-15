@@ -10,11 +10,10 @@ import Contact from './Contact'
 import Private from './Private'
 import Login from './Login'
 import Roadmap from './Roadmap'
-import Rewards from './Rewards'
 
 const router = createBrowserRouter(createRoutesFromElements(
   <Route path='/' element={<Layout/>} >
-    <Route path='' element={<Rewards/>} ></Route>
+    <Route path='' element={<Home/>} ></Route>
     <Route path='/Signup' element={<Signup />}></Route>
     <Route path='/Home' element={<Home />} ></Route>
     <Route path='/Login' element={<Login/>}></Route>
