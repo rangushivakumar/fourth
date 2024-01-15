@@ -1,0 +1,387 @@
+@import url(https://db.onlinewebfonts.com/c/4fdae58bbe59b0a9bd3ee50f8fb3e693?family=SweetSans-Light);
+*{
+  font-family: 'SweetSans-Light';
+  background-image: url("banner.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+#root{
+  height: 0;
+}
+
+.circle{
+  height: 10px;
+  width: 10px;
+  background: #C3956B;
+  border: 2px solid #C3956B;
+  border-radius: 10px;
+  margin-top: 6px;
+  margin-right: 9px;
+}
+.circle_container{
+  display: flex;
+  flex-direction: row;
+  padding-right: 50px;
+}
+
+.navbar{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 60px;
+  position: fixed;
+  height: 50px;
+}
+.navbar li{
+  margin-right: 1.5rem;
+  font-size: 0.9rem;
+  padding-left: 1.5rem;
+}
+.navbar ul{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+
+.navbar a{
+  color:#C3956B;
+  text-decoration: none;
+  padding: 6px;
+  
+  
+}
+
+
+.navbar a.active{
+  color: #101b2c;
+  background: linear-gradient(to right,#c3966be2,#eaa565,#ffa959);
+  border-radius: 4rem;
+}
+
+.disabled {
+  color: gray;
+  pointer-events: none;
+  
+}
+.navbar h4{
+  margin-right:  20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  color: aliceblue;
+}
+
+.signup{
+  background: url('./xxx2.svg') no-repeat center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1000;
+  background-color: rgba(210, 243, 243, 0.264);
+  overflow: hidden;
+  
+}
+.signup input::placeholder{
+  color: white;
+}
+
+.signup a{
+  display: contents;
+}
+.signup button{
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  margin-top: 1.5rem;
+  background: linear-gradient(to right,#c3966be2,#eaa565,#ffa959);
+  border-radius: 50px;
+  width: 10rem;
+  height: 2rem;
+  text-align: center;
+  cursor: pointer;
+  z-index: 1100;
+  outline: none;
+}
+.Rewards{
+  background: url('./rewards.svg') no-repeat center;
+  width: auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1100;
+  background-color: rgba(16, 19, 19, 0.67);
+  overflow: hidden;
+  
+}
+
+.Rewards h4{
+  display: contents;
+  padding-top: 40px;
+}
+
+.Rewards .inputx{
+
+  color: black;
+  margin-top: 12rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(to right,rgba(210, 243, 243, 0.179),#eaa565bf,rgba(210, 243, 243, 0.108));
+  border-radius: 50px;
+  width: 10rem;
+  height: 2rem;
+  text-align: center;
+  outline: none;
+  z-index: 1100;
+  border: 0;
+
+}
+
+.Rewards a{
+  text-decoration: none;
+  display: contents;
+}
+
+.signup_page_button_container button:hover{
+  background: none;
+}
+.signup_page_button_container a{
+  text-decoration: none;
+  color: white;
+  background: none;
+}
+.Rewards button{
+  text-decoration: none;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.825);
+  margin-top: 1.5rem;
+  background: linear-gradient(to right,rgba(210, 243, 243, 0.179),#eaa565bf,rgba(210, 243, 243, 0.108));
+  border-radius: 50px;
+  width: 10rem;
+  height: 2rem;
+  text-align: center;
+  cursor: pointer;
+  z-index: 1100;
+  outline: none;
+  border: 0;
+}
+
+.inputx{
+  color: black;
+  margin-top: 12rem;
+  background: linear-gradient(to right,#c3966be2,#eaa565,#ffa959);
+  border-radius: 50px;
+  width: 10rem;
+  height: 2rem;
+  text-align: center;
+  outline: none;
+  z-index: 1100;
+
+}
+.inputy{
+  color: black;
+  background: linear-gradient(to right,#c3966be2,#eaa565,#ffa959);
+  margin-top: 1.5rem;
+  border-radius: 50px;
+  width: 10rem;
+  height: 2rem;
+  text-align: center;
+  outline: none;
+  z-index: 1100;
+}
+
+
+.signup_page{
+  position: fixed;
+  top: 20vh;
+  left: 10vw;
+}
+.signup_page h1{
+  color: white;
+  font-size: 2.8rem;
+  width: 55vw;
+  line-height: 4.5rem;
+}
+.signup_page h2{
+  margin-top:20px;
+  color:#C3956B;
+  font-size: 2rem;
+  width: 40vw;
+  font-weight: bolder;
+}
+.signup_page_button1{
+  margin-top: 40px;
+  margin-right: 10px;
+  padding-bottom: 7px;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50px;
+  color: white;
+  font-size: 1rem;
+  height: 3rem;
+  width: 11rem;
+  background: linear-gradient(to right,#c3966be2,#eaa565,#ffa959);
+ cursor: pointer;
+}
+.signup_page_button_container{
+  display: flex;
+  flex-direction: row;
+}
+.signup_page_button2{
+  margin-left: 10px;
+  margin-top: 40px;
+  padding-bottom: 7px;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50px;
+  color: white;
+  font-size: 1rem;
+  height: 3rem;
+  width: 16rem;
+  background: linear-gradient(to right,#c3966be2,#eaa565,#ffa959);
+ cursor: pointer;
+}
+
+
+
+.about{
+  position: relative;
+  top: 20vh;
+  left: 2vw;
+  color: white;
+  width: 90vw;
+}
+
+ @media(max-width: 1034px){
+  *{
+    background-size: cover;
+  }
+
+  .navbar{
+    z-index: 1111;
+  }
+
+.signup_page h1{
+  font-size: 6vw;
+  line-height: 1.5em;
+}
+.signup_page h2{
+  font-size: 3vw;
+}
+.signup_page button{
+  width: auto;
+  height: auto;
+  font-size: 1.8vh;
+
+}
+  
+.navbar li{
+  background-image: none;
+}
+.navbar a{
+  background-image: none;
+}
+
+.navbar a.active{
+  color: #101b2c;
+  background: linear-gradient(to right,#c3966be2,#eaa565,#ffa959);
+  border-radius: 4rem;
+}
+
+  .navbar ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 80px;
+    right: -300px;
+    width: 250px;
+    height: 100vh;
+    background: #101b2c;
+    padding: 40px 0 0 10px;
+    transition: 0.3s ease-in-out ;
+    float: right;
+}
+.navbar  .active{
+  right: 0px;
+}
+
+.navbar li{
+  margin-bottom: 25px;
+}
+
+#mobile{
+  display: block;
+}
+
+#icon{
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+}
+  .Rewards{
+    background: url('./rewards.svg') no-repeat center;
+    background-color: rgba(16, 19, 19, 0.67);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 11111;
+    overflow: hidden;
+    
+  }
+  .signup{
+    background: url('./xxx2.svg') no-repeat center;
+    background-color:rgba(210, 243, 243, 0.264);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 11111;
+    overflow: hidden;
+    
+  }
+  .signup button{
+    color: white;
+  }
+  .signup input::placeholder{
+    color: white;
+  }
+  .about{
+    font-size: 4vw;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
